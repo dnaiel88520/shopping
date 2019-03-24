@@ -44,6 +44,10 @@ html {
 .main-menu {
   margin: 10px 0;
   height: 36px;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+
   button {
     display: none;
   }
@@ -86,12 +90,12 @@ html {
     display: flex;
      justify-content: space-between;
      align-items: flex-start;
-    padding-left: 250px;
+    padding: 0;
     margin: 0;
     height: 36px;
   }
   h2 {
-    padding:0;
+    padding-left:250px;
     margin: 0;
   }
 }
@@ -260,9 +264,7 @@ html {
     }
   }
   .page-footer {
-    ul {
-      flex-direction: column;
-    }
+
     li {
       flex-basis: auto;
       margin-bottom: 5px;
@@ -285,6 +287,9 @@ html {
     }
   }.main-menu {
     position: relative;
+    h2 {
+      padding: 0;
+    }
   .container {
     width: 100%;
   }
@@ -306,6 +311,17 @@ html {
            background: rgba(#fff,0.9);
            z-index: 5;
         }
+    }
+
+    .email {
+      h1 {
+        padding: 0;
+      }
+      button {
+        margin-left: 0;
+        width: 350px;
+
+      }
     }
 }
 @media screen and (max-width: 580px) {
